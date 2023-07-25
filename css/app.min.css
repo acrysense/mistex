@@ -5515,6 +5515,15 @@ svg {
   margin-bottom: 60px;
 }
 
+.sectionTitle {
+  display: block;
+  font-size: 40px;
+  line-height: 55px;
+  color: #303845;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .titleWrapper .titleText + .sectionTitle {
   margin-top: 16px;
 }
@@ -5605,6 +5614,8 @@ svg {
 
 .tarifCard .itemTitle {
   font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
@@ -5614,6 +5625,7 @@ svg {
 
 .tarifCard .profitWrapper .itemVal {
   font-size: 25px;
+  font-weight: bold;
   line-height: 25px;
   letter-spacing: 0.025em;
   color: inherit;
@@ -5642,6 +5654,7 @@ svg {
 
 .tarifCard .conditionLine .itemVal {
   font-size: 10px;
+  font-weight: bold;
   line-height: 22px;
   color: #303845;
   letter-spacing: 0.025em;
@@ -5650,6 +5663,7 @@ svg {
 
 .tarifCard .conditionLine .num {
   font-size: 20px;
+  font-weight: bold;
   line-height: 22px;
 }
 
@@ -5675,6 +5689,14 @@ svg {
   line-height: 22px;
   color: #5a6677;
   font-weight: 500;
+}
+
+.textWrapper {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #9f9f9f;
 }
 
 .btnMain {
@@ -5746,6 +5768,63 @@ svg {
   margin-top: 25px;
 }
 
+@media (max-width: 1599px) {
+  .tarifCard .profitWrapper .itemVal {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .sectionTitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .tarifsListSection .titleText {
+    max-width: 100%;
+  }
+  .tarifsList {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -20px -8px 0;
+  }
+  .tarifsList .item {
+    width: 50%;
+    padding: 20px 8px 0;
+  }
+  .tarifsList .item + .item .tarifCard {
+    padding-top: 38px;
+  }
+  .tarifsList .item:nth-child(3n) .tarifCard,
+  .tarifsList .item:nth-child(2n) .tarifCard {
+    min-height: 394px;
+  }
+  .tarifCard {
+    height: 100%;
+  }
+  .tarifCard:before {
+    top: -23px;
+    right: -10px;
+  }
+  .proposalsWrapper {
+    padding-bottom: 85px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .tarifsList {
+    margin: -47px -5px 0;
+  }
+  .tarifsList .item {
+    padding: 20px 5px 0;
+  }
+  .proposalsWrapper {
+    padding-bottom: 45px;
+  }
+  .tarifsList .item {
+    width: 100%;
+  }
+  .investStepsList .item {
+    width: 100%;
+  }
+}
 .instruments {
   text-align: center;
   padding: 10px 0px 0px;
